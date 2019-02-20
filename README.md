@@ -22,10 +22,10 @@ Springboot项目maven多模块拆分项目代码
 	模块还规范了代码边界的划分，开发者很容易通过模块确定自己所负责的内容。
 
 ### 多模块项目结构例子：
-![第一張圖](../pic/1.png)
+![第一張圖](./pic/1.png)
 
 ### 依赖关系：
-![第二張圖](../pic/2.png)
+![第二張圖](./pic/2.png)
 
 dao层依赖model 
 service依赖dao、mode、utils 
@@ -78,7 +78,7 @@ springboot项目总要是在多模块化拆分之后还能打成可执行的jar�
     </build>
 ```
  3.执行打包命令，mvn package -Dmaven.test.skip=true 跳过测试。
-![第三張圖](../pic/3.png)
+![第三張圖](./pic/3.png)
     
  4. 生成可执行的jar。
-![第三張圖](../pic/3.png)
+![第三張圖](./pic/3.png)
