@@ -34,7 +34,7 @@ web层依赖service、dao、model、utils
 ### 打包发布jar文件
 springboot项目总要是在多模块化拆分之后还能打成可执行的jar包。
 
-1.在启动类中修改pom文件(也就是web项目的)
+1. 在启动类中修改pom文件(也就是web项目的)
 ```
     <build>
             <!-- 为jar包取名 -->
@@ -48,7 +48,7 @@ springboot项目总要是在多模块化拆分之后还能打成可执行的jar�
             </plugins>
         </build>
 ```
-2.在parent中的pom中添加
+2. 在parent中的pom中添加
 
 ```
 <build>
@@ -77,8 +77,8 @@ springboot项目总要是在多模块化拆分之后还能打成可执行的jar�
         </plugins>
     </build>
 ```
- 3.执行打包命令，mvn package -Dmaven.test.skip=true 跳过测试。
+3. 执行打包命令，mvn package -Dmaven.test.skip=true 跳过测试。
 ![第三張圖](./pic/3.png)
     
- 4. 生成可执行的jar。
+4. 生成可执行的jar。
 ![第三張圖](./pic/3.png)
